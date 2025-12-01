@@ -1062,15 +1062,13 @@ ${orderData.ordered_items
               <button
                 type="submit"
                 className={styles.submitButton}
-                disabled={isSubmitting || !canDeliver || !agreementChecked}
+                disabled={isSubmitting || !agreementChecked}
               >
                 {isSubmitting ? (
                   <>
                     <div className={styles.spinner}></div>
                     Оформляем заказ...
                   </>
-                ) : !canDeliver ? (
-                  "Недостаточно товаров для заказа"
                 ) : !agreementChecked ? (
                   "Примите соглашение"
                 ) : (
