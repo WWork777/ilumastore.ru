@@ -8,7 +8,6 @@ import { FavoritesProvider } from "@/context/FavoritesContext";
 import { NotificationProvider } from "@/context/NotificationContext";
 import Notification from "@/components/ui/notification/notification";
 import FloatingCart from "@/components/ui/floatingCart/floatingCart";
-import AgeGate from "@/components/ui/AgeModal/AgeGate";
 import YandexMetrika from "@/components/YandexMetrika/YandexMetrika";
 
 const roboto = Montserrat({
@@ -41,13 +40,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={roboto.className}>
-    <meta name="yandex-verification" content="c28b11965f36cf29" />
+      <meta name="yandex-verification" content="c28b11965f36cf29" />
       <body>
         <NotificationProvider>
           <CartProvider>
             <FavoritesProvider>
               <Header />
-              <AgeGate>{children}</AgeGate>
+              {children}
               <Notification />
               <FloatingCart />
               <Footer />
