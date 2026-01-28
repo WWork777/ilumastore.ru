@@ -10,14 +10,14 @@ import Reviews from "../../components/Home/Reviews/Reviews";
 import ModalManager from "../../components/ModalManager/ModalManager";
 
 export const metadata = {
-  title: "IQOS ILUMA - официальный сайт Москва",
+  title: "IQOS ILUMA Москва - официальный сайт",
   description:
     "IQOS ILUMA - оригинальные устройства и стики в Москве. Официальный магазин, гарантия, быстрая доставка.",
   alternates: {
     canonical: "https://ilumastore.ru",
   },
   openGraph: {
-    title: "IQOS ILUMA - официальный сайт Москва",
+    title: "IQOS ILUMA Москва - официальный сайт",
     description:
       "IQOS ILUMA - оригинальные устройства и стики в Москве. Официальный магазин, гарантия, быстрая доставка.",
     url: "https://ilumastore.ru",
@@ -33,7 +33,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IQOS ILUMA - официальный сайт Москва",
+    title: "IQOS ILUMA Москва - официальный сайт",
     description:
       "IQOS ILUMA - оригинальные устройства и стики в Москве. Официальный магазин, гарантия, быстрая доставка.",
     images: ["https://ilumastore.ru/favicon/og-image.png"],

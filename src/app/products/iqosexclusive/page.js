@@ -23,7 +23,7 @@ async function safeFetch(url, options = {}) {
 async function fetchItems() {
   const baseUrl =
     process.env.NODE_ENV === "production" && typeof window === "undefined"
-      ? "http://localhost:3001"
+      ? "http://localhost:3002"
       : "";
 
   try {
