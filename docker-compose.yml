@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    container_name: ilumastore-app
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - VIRTUAL_HOST=ilumastore.ru,www.ilumastore.ru
+      - LETSENCRYPT_HOST=ilumastore.ru,www.ilumastore.ru
+      - LETSENCRYPT_EMAIL=parsh@gmail.com
+      - REDIRECT_www.ilumastore.ru=ilumastore.ru
+    networks:
+      - web
+    volumes:
+      # Монтируем папку с картинками в контейнер
+      - /var/www/ilumastore.ru/images:/app/public/images:ro
+      # Монтируем папку с билдом Next.js (опционально для кэширования)
+      # - /var/www/ilumastore.ru/.next:/app/.next
+
+networks:
+  web:
+    external: true
